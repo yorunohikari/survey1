@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">Survey description</p>
+  <form id="survey-form">
+    <fieldset>
+      <label for="name" id="name-label">Nama <input placeholder="Adhominem Albus Annuus" id="name" type="text" required></label>
+      <label for="email" id="email-label">Email <input placeholder="example@email.com" id="email" type="email" required></label>
+      <label for="number" id="number-label">Age <input placeholder="69" type="number" id="number" min="1" max="69"></label>  
+    </fieldset>
+    <fieldset>
+      <label for="carnivore"><input type="radio" value="carn" name="wteat" id="carnivore" class="inline"> Carnivore</label>
+      <label for="herbivore"><input type="radio" value="herb" name="wteat" id="herbivore" class="inline"> Herbivore</label>
+      <label for="dropdown">Gender 
+        <select name="gender" id="dropdown">
+          <option value="">Tomato</option>
+          <option value="1">Apache Helicopter</option>
+          <option value="2">USB Type-C</option>
+        </select>
+      </label>
+      <label for="agree"><input type="checkbox" name="setuju" value="agree" id="agree" class="inline"> I agree.</label>
+      <label for="accept"><input type="checkbox" name="setuju" value="accept" id="'accept" class="inline"> I accept.</label>    
+    </fieldset>
+    <fieldset>
+      <label for="kesan">Kesan dan pesan <textarea name="kesan" id="kesan" cols="30" rows="10"></textarea></label>
+    </fieldset>
+    <fieldset>
+      <input type="submit" value="Submit" id="submit">
+    </fieldset>
+  </form>  
+</body>  
+</html>  
